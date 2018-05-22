@@ -1,0 +1,8 @@
+@import './variables.scss';
+
+body{
+  background: $grey;
+  .red-background{
+    background: $red;
+  }
+}
