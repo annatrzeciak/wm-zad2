@@ -1,2 +1,38 @@
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url('../fonts/Roboto-Thin.ttf');
+}
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url('../fonts/Roboto-Black.ttf');
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
 $grey: #ebebeb;
 $red: #ec1c24;
+$white: #fff;
+$black: #000;
+
+$font-thin:  'Roboto-Thin';
+$font-black: 'Roboto-Black';
+$font-bold: 'Roboto-Bold';
+$font-light: 'Roboto-Light';
+$font-normal: 'Roboto-Regular';
+
+
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
